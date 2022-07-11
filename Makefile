@@ -7,7 +7,7 @@ DOCKER_PUSH_FLAGS := push
 DOCKERFILE := "Dockerfile.chaosmonkey"
 
 
-IMAGE_NAME := chaosmonkey/rpsingh
+IMAGE_NAME := rpsingh/chaosmonkey
 IMAGE_TAG := $(shell git rev-parse --verify HEAD)
 
 HELM := helm
