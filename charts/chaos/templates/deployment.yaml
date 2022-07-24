@@ -43,7 +43,7 @@ spec:
           {{- if .Values.config.excludeNamespaces }}
           - --excluded_namespaces={{ .Values.config.excludeNamespaces }}
           {{- else }}
-          - --excluded_namespaces=kube-system,{{ .Release.Namespace }}
+          - --excluded_namespaces=kube-system,flux-system,{{ .Release.Namespace }}
           {{- end }}
           {{- if .Values.config.namespaces }}
           - --namespaces={{ .Values.config.namespaces }}
